@@ -1,4 +1,4 @@
-angular.module("spaced-repetition-app", ['ui.router', 'ngMaterial'])
+angular.module("spaced-repetition-app", ['ui.router', 'ngMaterial', 'textAngular'])
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('home', {
     url: '/home',
