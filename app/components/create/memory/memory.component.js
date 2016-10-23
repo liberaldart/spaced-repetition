@@ -6,8 +6,8 @@ angular.module('spaced-repetition-app')
     htmlVariable: '='
   }
 })
-.controller("create-memory-controller", ['$scope', function($scope) {
+.controller("create-memory-controller", [function() {
   console.log("createMemory controller called");
   var cec = this;
-  $scope.htmlVariable = "Initial Content";
+  cec.importance = "";
 }]);

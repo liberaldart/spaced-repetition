@@ -1,1 +1,10 @@
-<text-angular ng-model="htmlVariable"></text-angular>
+<form  name="memory_form">
+  <md-input-container class="md-block">
+    <label>Why is this important to memorize?</label>
+    <input name="importance" type="text" ng-model="$ctrl.importance" required md-maxlength="120">
+    <div ng-messages="memory_form.importance.$error" ng-show="memory_form.importance.$dirty">
+      <div ng-message="required">This is required!</div>
+      <div ng-message="md-maxlength">That's too long!</div>
+    </div>
+  </md-input-container>
+</form>
